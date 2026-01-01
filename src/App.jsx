@@ -43,7 +43,7 @@ const App = () => {
 
   <div className="flex flex-col max-w-6xl p-4 px-6">
 
-    <div className="flex sticky top-0 justify-start" >
+    <div className="flex sticky top-0 justify-center sm:justify-start" >
     
         <NavigationMenu >
         <NavigationMenuList className=" gap-2 py-1 px-2 rounded-2xl w-fill bg-white border-2 mt-6">
@@ -112,7 +112,7 @@ const App = () => {
 
       <h2 className="text-xl font-semibold mb-6">Projects</h2>
 
-      <div className='grid gap-4 grid-cols-1 sm:grid-cols-2'>
+      <div className='grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
         <Card className='gap-0 '>
           
           <CardHeader>
