@@ -1,12 +1,7 @@
 import React from 'react'
-import Csa from './assets/img/csa.jpeg'
 import Psg from './assets/img/psg.png'
-import Portfolio_SS from './assets/img/Portfolio_SS.png'
 import { Badge } from "@/components/ui/badge"
 const skills = ["HTML", "CSS", "JavaScript", "Nodejs", "Expressjs", "React", "Mongodb", "Postgresdb", "Python"]
-
-import { ArrowRightIcon } from "lucide-react"
-
 
 import {
   NavigationMenu,
@@ -34,11 +29,6 @@ import { Button } from '@/components/ui/button'
 const App = () => {
   return (
   
-<div className=''>
-
-  
-
-
 <div className="flex flex-col items-center font-sans">
 
   <div className="flex flex-col max-w-6xl p-4 px-6">
@@ -46,22 +36,10 @@ const App = () => {
     <div className="flex sticky top-0 justify-center sm:justify-start" >
     
         <NavigationMenu >
-        <NavigationMenuList className=" gap-2 py-1 px-2 rounded-2xl w-fill bg-white border-2 mt-6">
+        <NavigationMenuList className=" gap-3 py-1 px-2 rounded-xl w-fill backdrop-blur-md bg-white/20 border-2 mt-6">
 
           <NavigationMenuItem className="block">
-            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}><a href='/'>Home</a></NavigationMenuLink>
-          </NavigationMenuItem>
-
-          <NavigationMenuItem className="block">
-            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}><a href='/'>Blog</a></NavigationMenuLink>
-          </NavigationMenuItem>
-
-          <NavigationMenuItem className="block">
-            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}><a href='/'>Projects</a></NavigationMenuLink>
-          </NavigationMenuItem>
-
-          <NavigationMenuItem className="block">
-            <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}><a href='/'>About</a></NavigationMenuLink>
+            <NavigationMenuLink asChild className="bg-transparent font-semibold hover:bg-transparent"><a href='/'>Home</a></NavigationMenuLink>
           </NavigationMenuItem>
 
         </NavigationMenuList>
@@ -70,6 +48,7 @@ const App = () => {
   </div>
 
     <div className="flex flex-col gap-2 mt-10 justify-center">
+      
       <h1 className="text-3xl md:text-5xl font-semibold " >Hi, I'm Dhanush</h1>
       <p className="text-md md:text-2xl text-gray-600">
         Undergrad Student at Psg College Of Technology <br></br> Actively open to project collaborations</p>
@@ -82,18 +61,16 @@ const App = () => {
         </div>
     </div>
 
-    
-
     <div className="mt-6">
       <h2 className="text-xl font-semibold">Education</h2>
 
-    <div className="flex items-center gap-4  mt-6">
-      <img src={Psg} className="h-12"/>
-        <div>
-            <h3 className="text-[17px] font-semibold">PSG College of Technology</h3>
-            <p className="text-[15px] text-gray-800">Bachelor of Technology - Information Technology (2023 - 2027)</p>
+      <div className="flex items-center gap-4  mt-6">
+        <img src={Psg} className="h-12"/>
+          <div>
+              <h3 className="text-[17px] font-semibold">PSG College of Technology</h3>
+              <p className="text-[15px] text-gray-800">Bachelor of Technology - Information Technology (2023 - 2027)</p>
+          </div>
         </div>
-      </div>
     </div>
 
     
@@ -111,71 +88,64 @@ const App = () => {
     <div className="mt-6">
 
       <h2 className="text-xl font-semibold mb-6">Projects</h2>
-
       <div className='grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
+
         <Card className='gap-0 '>
           
-          <CardHeader>
-            <CardTitle>Portfolio <div className='text-sm text-gray-400'>Personal Project</div></CardTitle>
-          </CardHeader>
-          
-          <CardContent className="text-sm md:text-md">
-            A sleek, responsive showcase built with React, Tailwind CSS, and Shadcn UI. Features a custom layout for maximum readability, a polished and accessible UI.
-          </CardContent>
-
-          <CardContent>
-            <a href="http://www.dhanushdev.co.in"><Button variant="outline" size="icon" className="mt-4 group cursor-pointer" aria-label="Submit">
+          <CardHeader className="flex justify-between ">
+            <CardTitle>Portfolio
+              <div className='text-sm text-gray-400'>Personal Project (Under Development)</div>
+              </CardTitle>
+              <a href="http://new.dhanushdev.co.in"><Button variant="outline" size="icon" className=" group cursor-pointer" aria-label="Submit">
               <img width="20" height="20" className='group-hover:-rotate-45 transition' src="https://img.icons8.com/ios-filled/50/right--v1.png" />
             </Button></a>
-          </CardContent>
-
+          </CardHeader>
           
+          <CardContent className="text-sm md:text-md mt-6">
+           A sleek, responsive showcase built with React, Tailwind CSS, and Shadcn UI. Features a custom layout for maximum readability, a polished and accessible UI.
+          </CardContent>          
         </Card>
 
         <Card className='gap-0 '>
           
-          <CardHeader>
+          <CardHeader className="flex justify-between ">
             <CardTitle>Easy Exam Academy 
               <div className='text-sm text-gray-400'>Freelance Project</div>
               </CardTitle>
-          </CardHeader>
-          
-          <CardContent className="text-sm md:text-md">
-            Designed and developed the official website for Easy Exam Academy, focusing on clarity, responsiveness, and user experience.
-          </CardContent>
-          <CardContent>
-            <a href="http://www.easyexamacademy.com"><Button variant="outline" size="icon" className="mt-4 group cursor-pointer" aria-label="Submit">
+              <a href="http://www.easyexamacademy.com"><Button variant="outline" size="icon" className=" group cursor-pointer" aria-label="Submit">
               <img width="20" height="20" className='group-hover:-rotate-45 transition' src="https://img.icons8.com/ios-filled/50/right--v1.png" />
             </Button></a>
+          </CardHeader>
+          
+          <CardContent className="text-sm md:text-md mt-6">
+            Designed and developed the official website for Easy Exam Academy, focusing on clarity, responsiveness, and user experience.
           </CardContent>
+          
         </Card>
+        
 
         <Card className='gap-0 '>
           
-          <CardHeader>
+          <CardHeader className="flex justify-between ">
             <CardTitle>Erode Runners Club
               <div className='text-sm text-gray-400'>Freelance Project</div>
               </CardTitle>
-          </CardHeader>
-          
-          <CardContent className="text-sm md:text-md">
-            Designed and developed the official website for Erode Runners Club, focusing on clarity, responsiveness, and user experience.
-          </CardContent>
-          <CardContent>
-            <a href="http://www.eroderunnersclub.com"><Button variant="outline" size="icon" className="mt-4 group cursor-pointer" aria-label="Submit">
+              <a href="http://www.eroderunnersclub.com"><Button variant="outline" size="icon" className=" group cursor-pointer" aria-label="Submit">
               <img width="20" height="20" className='group-hover:-rotate-45 transition' src="https://img.icons8.com/ios-filled/50/right--v1.png" />
             </Button></a>
+          </CardHeader>
+          
+          <CardContent className="text-sm md:text-md mt-6">
+            Designed and developed the official website for Erode Runners Club, focusing on clarity, responsiveness, and user experience.
           </CardContent>
         </Card>
 
-        
       </div>
 
     </div>
 
   </div>
 
-</div>
 </div>
   
 
