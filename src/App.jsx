@@ -56,7 +56,10 @@ const App = () => {
       <h1 className="text-3xl md:text-5xl font-semibold " data-fade="2" >Hi, I'm Dhanush</h1>
       <p className="text-md md:text-2xl text-gray-600"  data-fade="3" >
         Undergrad Student at Psg College Of Technology <br></br> Actively open to project collaborations</p>
-        <a className='mt-6 w-8 h-8'  data-fade="4"  href="https://www.linkedin.com/in/loopingdhanush/"> <img src="https://img.icons8.com/ios-glyphs/30/linkedin.png" className='w-full h-full' alt="linkedin"/> </a>
+        <div className="flex gap-2">
+        <a className='mt-6 w-8 h-8'  data-fade="4"  href="https://www.linkedin.com/in/loopingdhanush/"> <img src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000" className='w-full h-full' alt="linkedin"/> </a>
+        <a className='mt-6 w-8 h-8'  data-fade="4"  href="https://github.com/loopingdhanush"> <img src="https://img.icons8.com/?size=100&id=4Z2nCrz5iPY2&format=png&color=000000" className='w-full h-full' alt="github"/> </a>
+        </div> 
         <div className="mt-6"  data-fade="5" >
           <h2 className="text-xl font-semibold">About</h2>
           <p className="text-md md:text-lg text-gray-600 mt-6">
